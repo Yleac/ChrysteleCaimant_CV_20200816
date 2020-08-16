@@ -1,0 +1,352 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat-v14-latin-regular.eot');
+  src: url('fonts/Montserrat-v14-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Montserrat-v14-latin-regular.woff2') format('woff2'), 
+       url('fonts/Montserrat-v14-latin-regular.woff') format('woff'), 
+       url('fonts/Montserrat-v14-latin-regular.ttf') format('truetype'), 
+       url('fonts/Montserrat-v14-latin-regular.svg#Montserrat') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+/*caviar_dreamsregular*/
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('fonts/caviardreams-webfont.eot');
+    src: url('fonts/caviardreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/caviardreams-webfont.woff2') format('woff2'),
+         url('fonts/caviardreams-webfont.woff') format('woff'),
+         url('fonts/caviardreams-webfont.ttf') format('truetype'),
+         url('fonts/caviardreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Palette color codes - CSS */
+
+/* Palette URL: http://paletton.com/#uid=1000u0k743z4ghg3S9Geo3ukM3n */
+/* As hex codes */
+.color-primary-1 { color: #897777 } /*couleur background sidebar*/
+.color-primary-2 { color: #4D4444 } /*couleur backrground des titres h3*/
+
+
+/* ----------------------------- ELEMENTS PRINCIPAUX DE LA PAGE ------------------------------------------ */
+body
+{
+  margin: 0;
+  padding: 0;
+}
+#page /* Réglages communs à l'ensemble de la page */
+{
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-right: 35px;
+  font-family: 'Montserrat', arial, sans-serif; /*police par défaut sur la page*/
+  font-size: 1em; /*taille par défaut sur la page*/
+  box-shadow: 0 0 30px 5px #897777;
+}
+
+/* Flexbox : organisation de la page*/
+
+    *
+    {
+      box-sizing: border-box;
+    }
+
+  /*zone 1 : header */
+    header
+    {
+      display: flex;
+    }
+    .avatar
+    {
+      flex: 1;
+    }
+    .titre
+    {
+      flex: 2;
+    }
+  /*zone 2 : contenu du cv : sidebar et main */
+    .container
+    {
+      display: flex;
+    }
+    aside
+    {
+      flex :1;
+    }
+    main
+    {
+      flex: 2;
+    }
+    .box
+    {
+      display: flex;
+    }
+    .date
+    {
+      flex: 1.2;
+    }
+    .description
+    {
+      flex: 2;
+    } 
+  /*zone 3 : bas du cv footer : loisirs et recommandations*/ 
+    footer
+    {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .loisirs
+    {
+      flex: 1;
+    }
+    .reco
+    {
+      flex: 2;
+    }
+    .recommandations
+    {
+      display: flex;
+      justify-content: space-around;
+    }
+
+/* ----------------------------- Zone 1 : header ------------------------------------------------- */
+
+.avatar /*zone de l'avatar : background */
+      {
+        background-color: #897777;
+        text-align: center;
+        height: 315px;
+        padding-top: 60px;
+      }
+
+.titre
+{
+  position: relative;
+  left: 65px;
+  top: 80px;
+}
+
+  h2 /*Typo h2 : Nom Prenom*/
+    {
+      font-family: 'caviar_dreamsregular', Arial, sans-serif;
+      font-size: 2.5em;
+    }
+
+  h2 span /*couleur du prénom*/
+    {
+      color: #897777;
+    }
+
+  h1 /*Typo h1 : titre metier*/
+    {
+      font-size: 1.4em;
+      font-family: 'caviar_dreamsregular', arial, sans-serif;
+    }
+
+  h1 span /*bordure basse sur le mot Developpeur*/
+    {
+      border-bottom: solid #897777 2px;
+    }
+
+/* ----------------------------- Zone droite (Sidebar) : aside et loisirs ------------------------------------------ */
+
+aside, .loisirs
+{
+  background-color: #897777;
+}
+
+.contact p
+      {
+        padding-right: 40px;
+        padding-left: 40px;
+        line-height: 120%;
+        text-align: justify;
+      }
+
+.a_propos p
+    {
+      padding-right: 40px;
+      padding-left: 40px;
+      line-height: 30px;
+      text-align: justify;
+    }
+
+aside h3, .loisirs h3 /*titres H3 centrés et background*/
+      {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 1.2em;
+        color: #897777; /*couleur police titres de la sidebar */
+        background-color: #4D4444; /* couleur background des titres h3*/
+        line-height: 2em;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+/*liens dans la zone contact*/
+    a 
+      {
+          color: black;
+      }
+    a:hover /*au survol du lien background*/
+      {
+        background-color: #4D4444;
+        color: #897777;
+      }
+
+.loisirs i
+    {
+      font-size: 3em;
+      padding-left: 26px;
+      padding-top: 40px;
+    }
+
+/* ----------------------------- Zone gauche : main et recommandations ----------- */
+
+main h3, .reco h3 /*titres des blocs h3 :Formation + Experience + Recommandations*/
+      {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 1.4em;
+        font-weight: bold;
+        border-bottom: solid #897777 2px;
+        margin-left: 20px;
+        margin-bottom: 0;
+      }
+
+h3 i /*icones des titres h3 : Formation, Exp pro, Recommandations*/
+      {
+        color : #897777;
+        font-size:1.2em;
+        padding-right: 20px;
+      }
+
+.box h4 /* titres des formations et employeurs*/
+      {
+        font-family: 'caviar_dreamsregular', arial, sans-serif;
+        padding-top: 0;
+      }
+
+   /*  les icones  */
+    .fa-dot-circle /*icones cibles*/
+      {
+        color: #897777;
+        font-size: 1.1em;
+        padding-right: 10px;
+        padding-left: 20px;
+      }
+   .fa-circle /*icones cercles*/
+      {
+        color: #897777;
+        font-size: 0.8em;
+        padding-right: 10px;
+        padding-left: 25px;
+      }
+    .date p:last-child /*alignement du lieu sous la date*/
+    {
+      padding-left: 50px;
+    }
+
+    .description
+    {
+      text-align: justify;
+    }
+
+@media only screen and (max-width: 1024px) /* Résolutions écrans inférieures à 1024px */
+/* ordre prévu en 1 colonne : figure / aside / main / footer */
+{
+
+
+/* la box-shadow disparait + la taille de la page n'est plus limitée au format A4 */
+    body 
+    {
+      width: 100%;
+      height: auto;
+      font-size: 0.9em;
+    }
+    #page
+    {
+      width: 100%;
+      box-shadow: none;
+      padding-right: 5px;
+      padding-left: 5px; 
+
+    }
+
+    .titre
+    {
+      text-align: center;
+      position: static;
+      padding-bottom: 20px;
+    }
+
+    .avatar
+    {
+      padding: 40px;
+    }
+
+    /* Les blocs passents tous les uns sous les autres, selon ordre prévu : figure / aside / main / footer */
+/* Le texte se centre sauf pour la section .box où le texte est en alignement gauche */
+    header, .container, .recommandations, footer
+    {
+      flex-direction: column;
+      text-align: center;
+    }
+    .box
+    {
+      flex-direction: column;
+      padding-right: 10px;
+      padding-left: 10px;  
+    }
+
+/*les titres H3 formation, exp et recommandations se recentrent : suppression de la marge*/
+     main h3, .reco h3
+    {
+      margin-left: 0;
+    }
+
+
+/* Les dates et icones basculent en alignement gauche, date et lieu sur une ligne*/
+    .date
+    {
+      float: left;
+    }
+    .date p
+    {
+      text-align: left;
+      display: inline-block;
+      padding: 0;
+      float: left
+    }
+
+/* Ajout d'une virgule entre date et lieu pour meilleure lecture */
+    .date span:after
+    {
+      content: ","
+    }
+
+/* Ajout d'un espace entre la virgule inserée via le time:after et le lieu */
+    .date p:last-child
+    {
+      padding-left: 8px;
+    }
+
+/* Les titres H4 (centres de formation et entreprises) perdent leur margin-top pour remonter vers date et lieu + diminuent */
+    h4
+    {
+      margin-top: 0;
+      font-size: 0.9em;
+      color: #4D4444 ;
+    }
+
+    .loisirs
+    {
+      padding-bottom: 40px;
+      margin-bottom: 5px; 
+    }
+}
