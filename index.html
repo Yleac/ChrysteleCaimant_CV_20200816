@@ -2,33 +2,39 @@
 <html lang=fr>
 
 <head>
+	<!--information navigation : charset (jeu de caractère français) + viewport (responsive)-->
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Chrystèle CAIMANT</title>
-	<meta name="description" content="Site personnel de Chrystèle CAIMANT Développeuse Web Freelance" />
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+	<!-- informations SEO : optimisation pour les moteurs de recherche-->
+	<title>Chrystèle CAIMANT</title>
+	<meta name="description" content="Site personnel de Chrystèle CAIMANT Développeuse Web Freelance" />
+	
+
 	<!-- favicon kit selon site https://favicon.io/favicon-converter/-->
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 	<!-- fin favicon kit-->
 
 	<!--Kit icones FontAwesome -->
 	<script src="https://kit.fontawesome.com/eba35291ac.js" crossorigin="anonymous"></script>
 	<!--Fin Kit icones FontAwesome -->
+
+	<!-- Lien vers feuille de style CSS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 
 
 <body>
-<div id=page> <!-- div prenant la page complète du CV-->
+<div id="page"> <!-- div prenant la page complète du CV-->
 
 
 <!-- Sidebar CV (partie droite) : blocs Figure, Contact et A propos-->
 
-	<!-- Bloc Entête : Figure + Figcaption(nom et poste)-->
+	<!-- Bloc Entête : Figure + (nom et poste)-->
 		<header>
 			<div class="avatar">
 			<img src="images/avatar.png" alt="Photo">
@@ -70,7 +76,7 @@
 	
 			<!-- Bloc Formation-->
 			<article>
-				<h3><i class="fas fa-graduation-cap"></i>FORMATION</h3>
+				<h3 class="titre_formation"><i class="fas fa-graduation-cap"></i>FORMATION</h3>
 				<section class="box">					
 					<div class="date">	
 						<p><i class="far fa-dot-circle"></i><span>2020-2021</span></p>
@@ -164,6 +170,7 @@
 			</div>
 		</footer>
 		<!-- fin div : Loisirs-->
+
 		
 
 </div><!-- Fin de la div Page-->

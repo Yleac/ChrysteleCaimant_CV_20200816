@@ -279,6 +279,7 @@ h3 i /*icones des titres h3 : Formation, Exp pro, Recommandations*/ {
     text-align: left;
     display: inline-block;
     padding: 0;
+    float: left;
   }
 
   /* Ajout d'une virgule entre date et lieu pour meilleure lecture */
