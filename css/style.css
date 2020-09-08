@@ -2,12 +2,12 @@
 @font-face {
   font-family: "Montserrat";
   src: url("fonts/montserrat-v14-latin-regular.eot");
-  src: url("fonts/Montserrat-v14-latin-regular.eot?#iefix")
+  src: url("fonts/montserrat-v14-latin-regular.eot?#iefix")
       format("embedded-opentype"),
-    url("fonts/Montserrat-v14-latin-regular.woff2") format("woff2"),
-    url("fonts/Montserrat-v14-latin-regular.woff") format("woff"),
-    url("fonts/Montserrat-v14-latin-regular.ttf") format("truetype"),
-    url("fonts/Montserrat-v14-latin-regular.svg#Montserrat") format("svg");
+    url("fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    url("fonts/montserrat-v14-latin-regular.woff") format("woff"),
+    url("fonts/montserrat-v14-latin-regular.ttf") format("truetype"),
+    url("fonts/montserrat-v14-latin-regular.svg#Montserrat") format("svg");
   font-style: normal;
   font-weight: normal;
 }
