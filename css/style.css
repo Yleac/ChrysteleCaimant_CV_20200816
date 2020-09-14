@@ -15,7 +15,8 @@
 @font-face {
   font-family: "caviar_dreamsregular";
   src: url("../fonts/caviardreams-webfont.eot");
-  src: url("../fonts/caviardreams-webfont.eot?#iefix") format("embedded-opentype"),
+  src: url("../fonts/caviardreams-webfont.eot?#iefix")
+      format("embedded-opentype"),
     url("../fonts/caviardreams-webfont.woff2") format("woff2"),
     url("../fonts/caviardreams-webfont.woff") format("woff"),
     url("../fonts/caviardreams-webfont.ttf") format("truetype"),
@@ -113,7 +114,8 @@ footer {
   padding-top: 60px;
 }
 
-.titre h1, .titre h2 {
+.titre h1,
+.titre h2 {
   margin-left: 30px;
 }
 
@@ -193,7 +195,7 @@ main h3, .reco h3 /*titres des blocs h3 :Formation + Experience + Recommandation
   border-bottom: solid #897777 2px;
   margin-left: 20px;
   margin-bottom: 0;
-  margin-top :0;
+  margin-top: 0;
 }
 
 .main article {
@@ -250,10 +252,10 @@ h3 i /*icones des titres h3 : Formation, Exp pro, Recommandations*/ {
     padding-bottom: 20px;
   }
 
-  .titre h1, .titre h2 {
+  .titre h1,
+  .titre h2 {
     margin-left: 0;
   }
-
 
   .avatar {
     padding: 40px;
