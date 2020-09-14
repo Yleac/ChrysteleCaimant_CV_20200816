@@ -173,7 +173,9 @@ aside h3, .loisirs h3 /*titres H3 centrés et background*/ {
 /*liens dans la zone contact*/
 a {
   color: black;
+  text-decoration: none;
 }
+
 a:hover /*au survol du lien background*/ {
   background-color: #4d4444;
   color: #897777;
