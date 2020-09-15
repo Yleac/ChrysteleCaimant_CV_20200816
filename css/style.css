@@ -2,8 +2,7 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/montserrat-v14-latin-regular.eot");
-  src: url("../fonts/montserrat-v14-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/montserrat-v14-latin-regular.eot?#iefix") format("embedded-opentype"),
     url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
     url("../fonts/montserrat-v14-latin-regular.woff") format("woff"),
     url("../fonts/montserrat-v14-latin-regular.ttf") format("truetype"),
@@ -15,8 +14,7 @@
 @font-face {
   font-family: "caviar_dreamsregular";
   src: url("../fonts/caviardreams-webfont.eot");
-  src: url("../fonts/caviardreams-webfont.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/caviardreams-webfont.eot?#iefix") format("embedded-opentype"),
     url("../fonts/caviardreams-webfont.woff2") format("woff2"),
     url("../fonts/caviardreams-webfont.woff") format("woff"),
     url("../fonts/caviardreams-webfont.ttf") format("truetype"),
@@ -236,7 +234,7 @@ h3 i /*icones des titres h3 : Formation, Exp pro, Recommandations*/ {
   text-align: justify;
 }
 
-@media only screen and (max-width: 1024px) /* Résolutions écrans inférieures à 1024px */ /* ordre prévu en 1 colonne : figure / aside / main / footer */ {
+@media only screen and (max-width: 780px) /* Résolutions écrans inférieures à 780px */ /* ordre prévu en 1 colonne : figure / aside / main / footer */ {
   /* la box-shadow disparait + la taille de la page n'est plus limitée au format A4 */
   body {
     width: 100%;
